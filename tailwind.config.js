@@ -6,13 +6,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: '#f8f4f1',  // Soft off-white background
-        foreground: '#333',     // Darker text for contrast
-        accent: '#a67c52',      // Coffee brown accent color
-        secondary: '#e0dcd3',   // Lighter secondary color for soft contrasts
+        background: '#1a1a1d',  // Dark grayish background
+        foreground: '#f0e7db',  // Light tan for text
+        accent: '#c3073f',      // Deep red for highlights
+        secondary: '#6f2232',   // Darker red for secondary elements
+        tertiary: '#950740',    // Wine red for additional accents
       },
       fontFamily: {
-        sans: ['Roboto-Thin', 'sans-serif'],  // Roboto as the default font
+        sans: ['Roboto', 'sans-serif'],  // Keeping Roboto for consistency, can be changed
       },
     },
   },
