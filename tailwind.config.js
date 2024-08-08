@@ -1,17 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{html,js}",  // Tailwind will scan these files for class names
+    "./src/**/*.{html,js}",
   ],
   theme: {
     extend: {
       colors: {
-        foreground: '#242223',  // Text color
-        background: '#F7F7F7',  // Primary background color
-        background2: '#E2E2E2', // Secondary background color (footer or sections)
-        primary: '#242223',     // Default foreground (text, icons)
-        secondary: '#50E3C2',   // Secondary elements (buttons, highlights)
-        accent: '#F5A623',      // Accent color for emphasis
+        background: '#f8f4f1',  // Soft off-white background
+        foreground: '#333',     // Darker text for contrast
+        accent: '#a67c52',      // Coffee brown accent color
+        secondary: '#e0dcd3',   // Lighter secondary color for soft contrasts
+      },
+      fontFamily: {
+        sans: ['Roboto-Thin', 'sans-serif'],  // Roboto as the default font
       },
     },
   },

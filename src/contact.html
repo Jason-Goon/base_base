@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Barebones Template</title>
+  <title>Contact Us - Cafe Template</title>
   <link href="../dist/style.css" rel="stylesheet"> <!-- Linking the compiled Tailwind CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome CDN -->
 </head>
 <body class="bg-background text-foreground">
+
   <!-- Header -->
   <header class="bg-background shadow-md mb-16">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="index.html" class="text-xl font-bold text-primary">Company Name</a>
+      <a href="index.html" class="text-xl font-bold text-primary">Cafe Name</a>
       <nav>
         <button id="menu-toggle" class="text-foreground block md:hidden">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -35,47 +36,49 @@
     </div>
   </header>
 
-<!-- Main Content -->
-<main class="container mx-auto px-4 py-8">
-    <h1 class="text-4xl font-bold mb-8 text-primary text-center">Contact Us</h1>
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    
+    
     <div class="bg-white shadow-lg rounded-lg p-8 max-w-2xl mx-auto">
-      <!-- Contact Form -->
-      <form class="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
-        <div class="mb-4">
-          <label class="block text-foreground text-sm font-bold mb-2" for="name">
-            Name
-          </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-foreground leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your name">
+      <!-- Contact Details -->
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold text-primary">Get in Touch</h2>
+        <p class="text-foreground mt-2">Feel free to reach out to us via phone or email, or visit us at our location.</p>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="mb-4">
+        <div class="flex items-center mb-2">
+          <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+          <p class="text-foreground">123 Coffee St, Brewtown, USA</p>
         </div>
-        <div class="mb-4">
-          <label class="block text-foreground text-sm font-bold mb-2" for="email">
-            Email
-          </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-foreground leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your email address">
+        <div class="flex items-center mb-2">
+          <i class="fas fa-phone-alt text-accent mr-2"></i>
+          <p class="text-foreground">(123) 456-7890</p>
         </div>
-        <div class="mb-6">
-          <label class="block text-foreground text-sm font-bold mb-2" for="message">
-            Message
-          </label>
-          <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-foreground leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your message"></textarea>
+        <div class="flex items-center">
+          <i class="fas fa-envelope text-accent mr-2"></i>
+          <p class="text-foreground">contact@cafename.com</p>
         </div>
-        <div class="flex items-center justify-between">
-          <button class="bg-primary hover:bg-secondary text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-            Send Message
-          </button>
-        </div>
-      </form>
+      </div>
+    </div>
+
+    <!-- Google Map Embed -->
+    <div class="bg-white shadow-lg rounded-lg mt-8 max-w-2xl mx-auto overflow-hidden">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0201998997424!2d144.95565161571692!3d-37.81643897975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1bbd1ab%3A0x5045675218ce720!2sFederation+Square!5e0!3m2!1sen!2sau!4v1532582348458" 
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </main>
   
-
   <!-- Footer -->
   <footer class="bg-background2 text-white py-6 mt-16">
     <div class="container mx-auto text-center">
       <div class="flex flex-col items-center space-y-4">
         <div class="flex space-x-2">
           <i class="fas fa-map-marker-alt text-primary"></i>
-          <p class="text-foreground">1234 Main St, Anytown, USA</p>
+          <p class="text-foreground">123 Coffee St, Brewtown, USA</p>
         </div>
         <div class="flex space-x-2">
           <i class="fas fa-phone-alt text-primary"></i>
