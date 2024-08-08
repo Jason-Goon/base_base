@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "postcss src/style.css -o dist/style.css && cp -r src/* dist/"
+    "build": "postcss src/assets/css/style.css -o dist/style.css && cpx 'src/**/*' dist/"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
-    "tailwindcss": "^3.4.9"
+    "tailwindcss": "^3.4.9",
+    "postcss-cli": "^9.1.0",
+    "cpx": "^1.5.0"
   }
 }
