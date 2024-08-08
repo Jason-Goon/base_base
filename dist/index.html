@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogs' Home Pub</title>
+  <link href="../dist/style.css" rel="stylesheet"> <!-- Linking the compiled Tailwind CSS -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome CDN -->
+  <style>
+    @font-face {
+      font-family: 'Roboto';
+      font-weight: 300;
+      src: url('./assets/fonts/Roboto-Thin.ttf') format('truetype');
+    }
+    h1, h2, h3, h4, h5, h6, .brand-name {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
+    .text-shadow {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body class="bg-background text-foreground font-sans">
+
+ 
+
+  <!-- Masthead -->
+<section class="w-full h-screen relative">
+  <img src="./assets/images/masthead-dogshome.webp" alt="Dogs' Home Pub" class="object-cover w-full h-full">
+  <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center px-4">
+    <h1 class="text-3xl md:text-5xl text-foreground font-thin text-center text-shadow">Tervetuloa Dog's Home Pubiin</h1>
+    <p class="text-foreground mt-4 max-w-xl mx-auto text-center text-shadow text-lg md:text-2xl">
+      Nauti parhaista juomista ja viihtyisästä ilmapiiristä aivan Tampereen keskustassa.
+    </p>
+  </div>
+</section>
+
+<!-- Local Pub and Operating Hours Section -->
+<section class="container mx-auto px-4 py-16">
+  <h2 class="text-4xl font-thin mb-8 text-white text-center">Tervetuloa paikalliseen pubiin!</h2>
+  <div class="bg-background shadow-lg rounded-lg p-8 max-w-3xl mx-auto border border-yellow-500">
+    <p class="text-white mb-4 text-lg md:text-xl text-center">
+      Dog's Home Pub on paikallinen kohtaamispaikka, jossa on rento ja lämmin tunnelma. Meillä voit nauttia elävästä musiikista ja muista viihdetapahtumista sekä herkullisista juomista!
+    </p>
+    <p class="text-white mb-8 text-lg md:text-xl text-center">
+      Seuraa meitä Facebookissa saadaksesi tietoa tulevista tapahtumista ja erikoistarjouksista.
+    </p>
+    <h3 class="text-2xl font-thin mb-4 text-white text-center">Aukioloajat</h3>
+    <p class="text-white text-center">
+      Torstai: 19:00–04:00<br>
+      Perjantai: 19:00–04:00<br>
+      Lauantai: 19:00–04:00<br>
+      Sunnuntai: 19:00–02:00<br>
+      Maanantai: Suljettu<br>
+      Tiistai: 19:00–02:00<br>
+      Keskiviikko: 19:00–04:00
+    </p>
+  </div>
+
+   <!-- Contact Info -->
+   <div class="bg-background shadow-lg rounded-lg p-8 max-w-3xl mx-auto border border-yellow-500 mt-16">
+    <div class="text-center text-white">
+      <p class="mb-2">
+        <i class="fas fa-map-marker-alt text-yellow-500"></i>
+        Itsenäisyydenkatu 2, Tampere, Finland, 33100
+      </p>
+      <p class="mb-2">
+        <i class="fas fa-envelope text-yellow-500"></i>
+        <a href="mailto:dogshome@dogshome.fi" class="text-white hover:underline">dogshome@dogshome.fi</a>
+      </p>
+      <p class="mb-4">
+        <i class="fab fa-facebook-f text-yellow-500"></i>
+        <a href="https://www.facebook.com/people/Dogs-Home/100059037771576/" class="text-white hover:underline">Seuraa meitä Facebookissa</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Google Map Embed -->
+  <section class="container mx-auto px-4 py-16">
+    <div class="bg-tertiary shadow-lg rounded-lg max-w-3xl mx-auto overflow-hidden">
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.8554292799772!2d23.772471977449793!3d61.49871453552337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edf54ddfb3329%3A0x5d711a473607826a!2sDog&#39;s%20Home%20Pub!5e0!3m2!1sen!2sfi!4v1723148556866!5m2!1sen!2sfi" 
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-background text-foreground py-6 mt-16">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-map-marker-alt text-highlight"></i>
+        <p class="text-foreground">Itsenäisyydenkatu 2, Tampere, Finland, 33100</p>
+      </div>
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-envelope text-highlight"></i>
+        <p class="text-foreground">dogshome@dogshome.fi</p>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://www.facebook.com/people/Dogs-Home/100059037771576/" class="text-highlight">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <p class="text-foreground">Seuraa meitä Facebookissa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
