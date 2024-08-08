@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "build:css": "npx tailwindcss -i ./src/assets/css/style.css -o ./dist/style.css --minify"
-},
+    "build": "postcss src/style.css -o dist/style.css && cp -r src/* dist/"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
