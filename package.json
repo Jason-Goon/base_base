@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "postcss src/assets/css/style.css -o dist/style.css && cpx 'src/**/*' dist/"
-  },
+  "build": "mkdir -p dist && cp -r src/* dist/"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",
