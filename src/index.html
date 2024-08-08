@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barebones Template</title>
+  <link href="../dist/style.css" rel="stylesheet"> <!-- Linking the compiled Tailwind CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome CDN -->
+</head>
+<body class="bg-background text-foreground">
+  <!-- Header -->
+  <header class="bg-background shadow-md ">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold text-primary">Company Name</a>
+      <nav>
+        <button id="menu-toggle" class="text-foreground block md:hidden">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        <ul id="menu" class="hidden md:flex space-x-4">
+          <li><a href="index.html" class="text-foreground hover:text-secondary">Home</a></li>
+          <li><a href="about.html" class="text-foreground hover:text-secondary">About</a></li>
+          <li><a href="contact.html" class="text-foreground hover:text-secondary">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-background shadow-lg">
+      <ul class="px-4 py-2 space-y-2">
+        <li><a href="index.html" class="block text-foreground hover:text-secondary">Home</a></li>
+        <li><a href="about.html" class="block text-foreground hover:text-secondary">About</a></li>
+        <li><a href="contact.html" class="block text-foreground hover:text-secondary">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Masthead -->
+  <section class="bg-background2 text-center py-16">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold text-primary">Welcome to Our Website</h1>
+      <p class="text-foreground mt-4 max-w-xl mx-auto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+      </p>
+    </div>
+  </section>
+
+ <!-- Main Content -->
+<main class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold mb-8 text-primary text-center">Company</h1>
+    <div class="bg-white shadow-lg rounded-lg p-8 max-w-2xl mx-auto">
+      <p class="text-foreground mb-4">
+        Our company has been at the forefront of providing excellent services in the industry. We value our customers and strive to deliver top-notch solutions tailored to your needs.
+      </p>
+      <p class="text-foreground">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.
+      </p>
+    </div>
+  </main>
+  
+  
+
+  <!-- Footer -->
+  <footer class="bg-background2 text-white py-6 mt-16">
+    <div class="container mx-auto text-center">
+      <div class="flex flex-col items-center space-y-4">
+        <div class="flex space-x-2">
+          <i class="fas fa-map-marker-alt text-primary"></i>
+          <p class="text-foreground">1234 Main St, Anytown, USA</p>
+        </div>
+        <div class="flex space-x-2">
+          <i class="fas fa-phone-alt text-primary"></i>
+          <p class="text-foreground">(123) 456-7890</p>
+        </div>
+        <div class="flex space-x-4">
+          <a href="#" class="text-primary">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-primary">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-primary">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
