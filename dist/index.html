@@ -10,6 +10,9 @@
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome CDN -->
   <style>
+    
+
+    
     @font-face {
       font-family: 'Roboto';
       font-weight: 300;
@@ -37,6 +40,7 @@
       z-index: 10;
       background: transparent;
     }
+    
   </style>
 </head>
 
@@ -57,11 +61,11 @@
 </header>
 
 <!-- Masthead Section with Gallery Background -->
-<section class="w-full relative" style="height: 100vh;">
-  <div class="absolute inset-0 flex flex-col md:flex-row">
-    <img src="./assets/images/gallery1.jpg" alt="Gallery Image 1" class="flex-1 h-full object-cover">
-    <img src="./assets/images/gallery2.jpg" alt="Gallery Image 2" class="flex-1 h-full object-cover">
-    <img src="./assets/images/gallery3.jpg" alt="Gallery Image 3" class="flex-1 h-full object-cover">
+<section class="w-full h-screen relative">
+  <div class="absolute inset-0 grid grid-cols-1 md:grid-cols-3 gap-0">
+    <img src="./assets/images/gallery1.jpg" alt="Gallery Image 1" class="object-cover w-full h-full">
+    <img src="./assets/images/gallery2.jpg" alt="Gallery Image 2" class="object-cover w-full h-full">
+    <img src="./assets/images/gallery3.jpg" alt="Gallery Image 3" class="object-cover w-full h-full">
   </div>
   <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center px-4">
     <h1 class="text-4xl md:text-6xl text-accent font-bold text-center text-shadow">Éclair Paikka</h1>
