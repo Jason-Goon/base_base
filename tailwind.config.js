@@ -21,11 +21,9 @@ module.exports = {
       },
       colors: {
         background: '#f7f7f7',  // Soft off-white background
-        foreground: '#000000',  // Black text
-        accent: '#ffd1dc',      // Pastel pink for borders and accent text
-        secondary: '#f3e8d3',   // Light cream for secondary elements
-        tertiary: '#e9dac1',    // Soft pastel for additional accents
-        highlight: '#c9b59f',   // Soft brown for buttons or links
+        accent: '#ffd1dc',      // Pastel pink for headers and borders
+        highlight: '#c9b59f',   // Soft brown for links and accents
+        black: '#000000',       // Standard black for text
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],  // Roboto font

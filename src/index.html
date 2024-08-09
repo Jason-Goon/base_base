@@ -1,136 +1,177 @@
 <!DOCTYPE html>
 <html lang="fi">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Éclair Paikka Tampere</title>
+  <title>Tanjan Korjausompelimo</title>
   <link href="style.css" rel="stylesheet">
-
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome CDN -->
-  <style>
-    
-
-    
-    @font-face {
-      font-family: 'Roboto';
-      font-weight: 300;
-      src: url('./assets/fonts/Roboto-Thin.ttf') format('truetype');
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    .brand-name {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 300;
-    }
-
-    .text-shadow {
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    }
-
-    .sticky-header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: transparent;
-    }
-    
-  </style>
 </head>
-
 <body class="bg-background text-black font-sans">
 
- <!-- Transparent Header with Centered Social Media Links -->
- <header class="absolute top-0 left-0 w-full z-10 mt-4">
-  <nav class="container mx-auto px-4 py-4 flex justify-center items-center">
-    <div class="flex space-x-10 text-accent">
-      <a href="https://www.facebook.com/mamascakeskondi/" class="hover:text-highlight">
-        <i class="fab fa-facebook-f text-2xl"></i>
-      </a>
-      <a href="https://www.instagram.com/mamascakes_eclairpaikka/" class="hover:text-highlight">
-        <i class="fab fa-instagram text-2xl"></i>
-      </a>
-    </div>
+  <!-- Transparent Header with Centered Facebook Link -->
+<header class="absolute top-0 left-0 w-full z-10">
+  <nav class="container mx-auto px-4 py-4 flex justify-center">
+    <a href="https://www.facebook.com/tanjan.korjausompelimo/" class="text-highlight hover:text-black">
+      <i class="fab fa-facebook-f text-2xl"></i>
+    </a>
   </nav>
 </header>
 
-<!-- Masthead Section with Gallery Background -->
-<section class="w-full h-screen relative">
-  <div class="absolute inset-0 flex flex-col md:grid md:grid-cols-3">
-    <img src="./assets/images/gallery1.jpg" alt="Gallery Image 1" class="object-cover w-full h-1/3 md:h-full">
-    <img src="./assets/images/gallery2.jpg" alt="Gallery Image 2" class="object-cover w-full h-1/3 md:h-full">
-    <img src="./assets/images/gallery3.jpg" alt="Gallery Image 3" class="object-cover w-full h-1/3 md:h-full">
-  </div>
-  <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center px-4">
-    <h1 class="text-4xl md:text-6xl text-accent font-bold text-center text-shadow">Éclair Paikka</h1>
+
+  <!-- Masthead Section with Background Image -->
+  <section class="w-full h-screen bg-cover bg-center relative" style="background-image: url('./assets/images/korjaus.webp');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
+      <h1 class="text-3xl md:text-4xl text-accent font-bold text-center text-shadow">Tanjan Korjausompelimo</h1>
+    </div>
+  </section>
+
+  <!-- Intro Section -->
+  <section class="container mx-auto px-4 py-16 text-center">
+    <p class="text-xl">
+      Vuosien kokemus ja kiinnostus ompeluun toimi innoittajana!
+    </p>
+  </section>
+
+   <!-- Operating Hours Section -->
+   <section class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold mb-4 text-center">Aukioloajat</h2>
+    <div class="bg-background shadow-lg rounded-lg p-8 max-w-3xl mx-auto border border-accent">
+      <p class="text-black text-center">
+        Maanantai: 10:00–17:00<br>
+        Tiistai: 10:00–17:00<br>
+        Keskiviikko: 10:00–17:00<br>
+        Torstai: 10:00–17:00<br>
+        Perjantai: 10:00–17:00<br>
+        Lauantai: Suljettu<br>
+        Sunnuntai: Suljettu
+      </p>
+    </div>
+  </section>
+
+  <!-- Price List Section -->
+<section class="container mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold mb-4 text-center">Hinnasto</h2>
+  <div class="bg-background shadow-lg rounded-lg p-8 max-w-3xl mx-auto border border-accent text-left">
+    <h3 class="text-2xl font-bold mb-2">Hame/leninki</h3>
+    <ul class="mb-4">
+      <li>♥ Lyhennys helma alle 2,5m (koneommel, vuoriton) alk. 35€</li>
+      <li>♥ Lyhennys helma alle 2,5m (koneommel, vuorilla/halkiolla, käsinompelu) alk. 45€</li>
+      <li>♥ Lyhennys (koneommel vekki/kellohelma) alk. 47€</li>
+      <li>♥ Olkaimien lyhennys (vuoriton) alk. 25€ / vuorillinen alk. 49€</li>
+      <li>♥ Lyhennys juhlapuvut:</li>
+      <ul class="ml-4">
+        <li>* Helma 2,5-5m 65€ plus 10€ per lisäkerros</li>
+        <li>* Helma 5-10m 75€ plus 15€ per lisäkerros</li>
+        <li>* Helma 10-15m 85€ plus 20€ per lisäkerros</li>
+        <li>* Helma 15-20m 95€ plus 25€ per lisäkerros</li>
+      </ul>
+      <li>♥ Hameen sivujen kavennus (vuorillinen) alk. 45€</li>
+      <li>♥ Leningin sivujen kavennus (vuorillinen, vetoketjulla, luilla) alk. 55€</li>
+      <li>♥ Hameen vetoketjun vaihto alk. 25€</li>
+      <li>♥ Leningin vetoketjun vaihto alk. 35€</li>
+      <li>♥ Piilovetoketjun vaihto 39€-49€</li>
+    </ul>
+
+    <h3 class="text-2xl font-bold mb-2">Housut</h3>
+    <ul class="mb-4">
+      <li>♥ Lyhennys/pidennys (koneommel) alk. 21€</li>
+      <li>♥ Lyhennys (halkiolla/piilo-ompeleella käsin) alk. 35€</li>
+      <li>♥ Lyhennys upslageilla alk. 39€</li>
+      <li>♥ Sisäänotto vyötäröltä alk. 27€</li>
+      <li>♥ Sisäänotto vyötäröltä farkut alk. 35€</li>
+      <li>♥ Lahkeen kavennus alk. 18€/lahje</li>
+      <li>♥ Lahkeiden kavennus alakaanteen avauksella alk 21€/lahje</li>
+      <li>♥ Taskupussin korjaus/vaihto alk 25€/kpl</li>
+      <li>♥ Vetoketjun vaihto alk. 25€</li>
+      <li>♥ Vetoketjun vaihto farkkuihin alk. 25€</li>
+    </ul>
+
+    <h3 class="text-2xl font-bold mb-2">Jakku/takki</h3>
+    <ul class="mb-4">
+      <li>♥ Helman lyhennys (vuoriton) alk. 45€</li>
+      <li>♥ Helman lyhennys (vuori/halkio) alk. 59€</li>
+      <li>♥ Helman lyhennys (sivuhalkiot) alk. 59€</li>
+      <li>♥ Sisäänotto selkäsaumasta alk. 39€</li>
+      <li>♥ Sisäänotto selkäsaumasta (halkio/vuorillinen) alk. 49€</li>
+      <li>♥ Sivusaumoista sisään alk. 59€</li>
+      <li>♥ Hihojen lyhennys (vuoriton/vuorillinen) alk. 45€/59€</li>
+      <li>♥ Hihojen lyhennys (halkiot/mansetit/tampit/) alk. 51€</li>
+      <li>♥ Hihojen uudelleen istutus alk. 65€</li>
+      <li>♥ Vetoketjun vaihto alk. 60€ (ei sis. vetoketjua)</li>
+    </ul>
+
+    <h3 class="text-2xl font-bold mb-2">Nahkatyöt</h3>
+    <ul class="mb-4">
+      <li>♥ Kaikki nahkatyöt alk. 49€</li>
+    </ul>
+
+    <h3 class="text-2xl font-bold mb-2">Paidat</h3>
+    <ul class="mb-4">
+      <li>♥ Hihojen lyhennys (suora hiha) alk. 23€</li>
+      <li>♥ Hihojen lyhennys (napinlävillä) alk. 43€</li>
+      <li>♥ Hihojen lyhennys (halkion nostolla) alk. 45€</li>
+      <li>♥ Kavennus sivusaumoista alk. 35€</li>
+      <li>♥ Helman lyhennys alk. 25€</li>
+    </ul>
+
+    <h3 class="text-2xl font-bold mb-2">Muut</h3>
+    <ul class="mb-4">
+      <li>♥ Likaisen tuotteen/vaatteen lisämaksu 15€/kpl</li>
+      <li>♥ Useamman kuin yhden vaatteen korjaukset/muokkaukset 59€/tunti</li>
+      <li>♥ Vuorin vaihto alk. 130€</li>
+      <li>♥ Nappien ompelu 3€/kpl</li>
+      <li>♥ Lankojen ja muiden käytettyjen materiaalien hinnat lisätään loppusummaan</li>
+      <li>♥ Materiaalien hankintamatkat minimissään 10€/asiakas</li>
+      <li>♥ Pienin maksu 10€</li>
+    </ul>
+
+    <h3 class="text-2xl font-bold mb-2">Sisustustekstiilit</h3>
+    <ul>
+      <li>♥ Sisustustekstiilien ompelu esim. verhot, tyynyt, päiväpeitot, pyyhkeet, petivaatteet 59€/tunti</li>
+    </ul>
+
+    <p class="mt-4">Huomioitavaa: Tuothan vain puhtaita vaatteita korjaukseen/muokkaukseen. Likaisen tuotteen/vaatteen lisä 15€</p>
   </div>
 </section>
 
 
+ 
 
-
-
-  <!-- Welcome Section under Masthead -->
-  <section class="container mx-auto px-4 py-8 text-center">
-    <h2 class="text-4xl font-bold mb-4 text-black text-center">Tervetuloa</h2>
-    <p class="text-black text-xl md:text-2xl">
-      Pieni kahvila Kalevan sydämessä❣️ Teemme ainoat gluteenittomat éclairit Suomessa, tervetuloa kaikille 😍
-    </p>
-  </section>
-
-  <!-- Combined Operating Hours and Contact Section -->
-  <section id="contact" class="container mx-auto px-4 py-16">
-    <h2 class="text-4xl font-bold mb-4 text-black text-center">Aukioloajat ja Yhteystiedot</h2>
+  <!-- Location Section -->
+  <section class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold mb-4 text-center">Sijainti</h2>
     <div class="bg-background shadow-lg rounded-lg p-8 max-w-3xl mx-auto border border-accent">
-      <div class="text-black text-center mb-8">
-        <p>
-          Perjantai: 11:00–18:00<br>
-          Lauantai: 12:00–18:00<br>
-          Sunnuntai: 12:00–18:00<br>
-          Maanantai: 12:00–17:00<br>
-          Tiistai: 11:00–18:00<br>
-          Keskiviikko: 11:00–18:00<br>
-          Torstai: 11:00–18:00
-        </p>
-      </div>
-      <div class="text-black text-center">
-        <p class="mb-2">
-          <i class="fas fa-map-marker-alt text-highlight"></i>
-          <span>Itäinenkatu 8, 33100 Tampere, Finland</span>
-        </p>
-        <div class="mt-8">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.909104152661!2d23.790581213028265!3d61.49783743549388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edf23db95c57f%3A0x9ee5b3ed3d0fb3ef!2s%C3%89clair%20Paikka!5e0!3m2!1sen!2sfi!4v1723161324803!5m2!1sen!2sfi"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+      <p class="text-black text-center mb-4">
+        Osoite: Sammonkatu 22-24, 33540 Tampere
+      </p>
+      <div class="mt-8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.9386493111874!2d23.79323931302826!3d61.49735463553341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edf57f395700b%3A0x2de2a65b7fa2eec2!2sTanjan%20Korjausompelimo!5e0!3m2!1sen!2sfi!4v1723199454930!5m2!1sen!2sfi"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </section>
 
-  <!-- Social Media and Footer Section -->
-  <footer class="container mx-auto px-4 py-8">
-    <div class="flex justify-center space-x-10 text-black">
-      <a href="https://www.facebook.com/mamascakeskondi/" class="text-black hover:text-highlight">
-        <i class="fab fa-facebook-f text-2xl"></i>
-      </a>
-      <a href="https://www.instagram.com/mamascakes_eclairpaikka/" class="text-black hover:text-highlight">
-        <i class="fab fa-instagram text-2xl"></i>
-      </a>
-    </div>
-    <div class="text-center text-black mt-4">
-      <p class="mb-2">
-        <i class="fas fa-envelope text-highlight"></i>
-        <a href="mailto:info@eclairpaikka.fi" class="text-black hover:underline">info@eclairpaikka.fi</a>
+  <!-- Contact Information Section -->
+  <section class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold mb-4 text-center">Yhteystiedot</h2>
+    <div class="bg-background shadow-lg rounded-lg p-8 max-w-3xl mx-auto border border-accent">
+      <p class="text-black text-center mb-4">
+        Puhelinnumero: 0400 714 869
+      </p>
+      <p class="text-black text-center">
+        Sähköposti: <a href="mailto:tanja_virtala@hotmail.com" class="text-highlight">tanja_virtala@hotmail.com</a>
       </p>
     </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="container mx-auto px-4 py-8 text-center">
+    <p class="text-black">
+      &copy; 2024 Tanjan Korjausompelimo. Kaikki oikeudet pidätetään.
+    </p>
   </footer>
 
-  <script src="./scripts/main.js"></script>
 </body>
-
 </html>
