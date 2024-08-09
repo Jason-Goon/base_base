@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dog's Home Pub</title>
-  <link href="style.css" rel="stylesheet"> <!-- Linking the compiled Tailwind CSS -->
+  <title>Éclair Paikka Tampere</title>
+  <link href="../dist/style.css" rel="stylesheet">
+
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome CDN -->
   <style>
@@ -13,102 +15,115 @@
       font-weight: 300;
       src: url('./assets/fonts/Roboto-Thin.ttf') format('truetype');
     }
-    h1, h2, h3, h4, h5, h6, .brand-name {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .brand-name {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
     }
+
     .text-shadow {
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
+
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: transparent;
+    }
   </style>
 </head>
-<body class="bg-background text-foreground font-sans">
 
- 
+<body class="bg-background text-black font-sans">
 
-  <!-- Masthead -->
+ <!-- Transparent Header with Centered Social Media Links -->
+ <header class="absolute top-0 left-0 w-full z-10 mt-4">
+  <nav class="container mx-auto px-4 py-4 flex justify-center items-center">
+    <div class="flex space-x-10 text-accent">
+      <a href="https://www.facebook.com/mamascakeskondi/" class="hover:text-highlight">
+        <i class="fab fa-facebook-f text-2xl"></i>
+      </a>
+      <a href="https://www.instagram.com/mamascakes_eclairpaikka/" class="hover:text-highlight">
+        <i class="fab fa-instagram text-2xl"></i>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<!-- Masthead Section with Gallery Background -->
 <section class="w-full h-screen relative">
-  <img src="./assets/images/masthead-dogshome.webp" alt="Dogs' Home Pub" class="object-cover w-full h-full">
-  <div class="absolute inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center px-4">
-    <h1 class="text-3xl md:text-5xl text-foreground font-thin text-center text-shadow">Tervetuloa Dog's Home Pubiin</h1>
-    <p class="text-foreground mt-4 max-w-xl mx-auto text-center text-shadow text-lg md:text-2xl">
-      Nauti parhaista juomista ja viihtyisästä ilmapiiristä aivan Tampereen keskustassa.
-    </p>
+  <div class="absolute inset-0 grid grid-cols-1 md:grid-cols-3">
+    <img src="./assets/images/gallery1.jpg" alt="Gallery Image 1" class="object-cover w-full h-full">
+    <img src="./assets/images/gallery2.jpg" alt="Gallery Image 2" class="object-cover w-full h-full">
+    <img src="./assets/images/gallery3.jpg" alt="Gallery Image 3" class="object-cover w-full h-full">
+  </div>
+  <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center px-4">
+    <h1 class="text-4xl md:text-6xl text-accent font-bold text-center text-shadow">Éclair Paikka</h1>
   </div>
 </section>
 
-<!-- Local Pub and Operating Hours Section -->
-<section class="container mx-auto px-4 py-16">
-  <h2 class="text-4xl font-thin mb-8 text-white text-center">Tervetuloa paikalliseen pubiin!</h2>
-  <div class="bg-background shadow-lg rounded-lg p-8 max-w-3xl mx-auto border border-yellow-500">
-    <p class="text-white mb-4 text-lg md:text-xl text-center">
-      Dog's Home Pub on paikallinen kohtaamispaikka, jossa on rento ja lämmin tunnelma. Meillä voit nauttia elävästä musiikista ja muista viihdetapahtumista sekä herkullisista juomista!
+  <!-- Welcome Section under Masthead -->
+  <section class="container mx-auto px-4 py-8 text-center">
+    <h2 class="text-4xl font-bold mb-4 text-black text-center">Tervetuloa</h2>
+    <p class="text-black text-xl md:text-2xl">
+      Pieni kahvila Kalevan sydämessä❣️ Teemme ainoat gluteenittomat éclairit Suomessa, tervetuloa kaikille 😍
     </p>
-    <p class="text-white mb-8 text-lg md:text-xl text-center">
-      Seuraa meitä Facebookissa saadaksesi tietoa tulevista tapahtumista ja erikoistarjouksista.
-    </p>
-    <h3 class="text-2xl font-thin mb-4 text-white text-center">Aukioloajat</h3>
-    <p class="text-white text-center">
-      Torstai: 19:00–04:00<br>
-      Perjantai: 19:00–04:00<br>
-      Lauantai: 19:00–04:00<br>
-      Sunnuntai: 19:00–02:00<br>
-      Maanantai: Suljettu<br>
-      Tiistai: 19:00–02:00<br>
-      Keskiviikko: 19:00–04:00
-    </p>
-  </div>
-
-   <!-- Contact Info -->
-   <div class="bg-background shadow-lg rounded-lg p-8 max-w-3xl mx-auto border border-yellow-500 mt-16">
-    <div class="text-center text-white">
-      <p class="mb-2">
-        <i class="fas fa-map-marker-alt text-yellow-500"></i>
-        Itsenäisyydenkatu 2, Tampere, Finland, 33100
-      </p>
-      <p class="mb-2">
-        <i class="fas fa-envelope text-yellow-500"></i>
-        <a href="mailto:dogshome@dogshome.fi" class="text-white hover:underline">dogshome@dogshome.fi</a>
-      </p>
-      <p class="mb-4">
-        <i class="fab fa-facebook-f text-yellow-500"></i>
-        <a href="https://www.facebook.com/people/Dogs-Home/100059037771576/" class="text-white hover:underline">Seuraa meitä Facebookissa</a>
-      </p>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- Google Map Embed -->
-  <section class="container mx-auto px-4 py-16">
-    <div class="bg-tertiary shadow-lg rounded-lg max-w-3xl mx-auto overflow-hidden">
-      <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.8554292799772!2d23.772471977449793!3d61.49871453552337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edf54ddfb3329%3A0x5d711a473607826a!2sDog&#39;s%20Home%20Pub!5e0!3m2!1sen!2sfi!4v1723148556866!5m2!1sen!2sfi" 
-        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-background text-foreground py-6 mt-16">
-    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-      <div class="flex items-center space-x-2">
+ <!-- Combined Operating Hours and Contact Section -->
+<section id="contact" class="container mx-auto px-4 py-16">
+  <h2 class="text-4xl font-bold mb-4 text-black text-center">Aukioloajat ja Yhteystiedot</h2>
+  <div class="bg-background shadow-lg rounded-lg p-8 max-w-3xl mx-auto border border-accent">
+    <div class="text-black text-center mb-8">
+      <p class="text-lg md:text-xl"> <!-- Increased font size -->
+        Perjantai: 11:00–18:00<br>
+        Lauantai: 12:00–18:00<br>
+        Sunnuntai: 12:00–18:00<br>
+        Maanantai: 12:00–17:00<br>
+        Tiistai: 11:00–18:00<br>
+        Keskiviikko: 11:00–18:00<br>
+        Torstai: 11:00–18:00
+      </p>
+    </div>
+    <div class="text-black text-center">
+      <p class="mb-2 text-lg md:text-xl"> <!-- Increased font size -->
         <i class="fas fa-map-marker-alt text-highlight"></i>
-        <p class="text-foreground">Itsenäisyydenkatu 2, Tampere, Finland, 33100</p>
+        <span>Itäinenkatu 8, 33100 Tampere, Finland</span>
+      </p>
+      <div class="mt-8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.909104152661!2d23.790581213028265!3d61.49783743549388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468edf23db95c57f%3A0x9ee5b3ed3d0fb3ef!2s%C3%89clair%20Paikka!5e0!3m2!1sen!2sfi!4v1723161324803!5m2!1sen!2sfi"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-      <div class="flex items-center space-x-2">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Social Media and Footer Section -->
+  <footer class="container mx-auto px-4 py-8">
+    <div class="flex justify-center space-x-10 text-black">
+      <a href="https://www.facebook.com/mamascakeskondi/" class="text-black hover:text-highlight">
+        <i class="fab fa-facebook-f text-2xl"></i>
+      </a>
+      <a href="https://www.instagram.com/mamascakes_eclairpaikka/" class="text-black hover:text-highlight">
+        <i class="fab fa-instagram text-2xl"></i>
+      </a>
+    </div>
+    <div class="text-center text-black mt-4">
+      <p class="mb-2">
         <i class="fas fa-envelope text-highlight"></i>
-        <p class="text-foreground">dogshome@dogshome.fi</p>
-      </div>
-      <div class="flex items-center space-x-4">
-        <a href="https://www.facebook.com/people/Dogs-Home/100059037771576/" class="text-highlight">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <p class="text-foreground">Seuraa meitä Facebookissa</p>
-      </div>
+        <a href="mailto:info@eclairpaikka.fi" class="text-black hover:underline">info@eclairpaikka.fi</a>
+      </p>
     </div>
   </footer>
 
   <script src="./scripts/main.js"></script>
 </body>
+
 </html>
